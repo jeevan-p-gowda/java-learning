@@ -1,3 +1,5 @@
+package TestNG;
+
 public class Calculator {
     protected int add(int firstNumber, int secondNumber) {
         return firstNumber + secondNumber;
