@@ -1,6 +1,5 @@
 package Streams;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
@@ -8,9 +7,9 @@ import java.util.stream.Collectors;
 public class MapDemo1 {
     public static void main(String[] args) {
         List<String> vehicles= Arrays.asList("Car","Jeep","Lorry","SUV");
-        List<String> result= new ArrayList<>();
+        List<String> result;
 
-        result=vehicles.stream().map(s->s.toUpperCase()).collect(Collectors.toList());
+        result=vehicles.stream().map(String::toUpperCase).collect(Collectors.toList());
         System.out.println(result);
     }
 }

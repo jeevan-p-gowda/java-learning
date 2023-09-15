@@ -12,21 +12,15 @@ public class Methods2 {
         hs.add("One Melon");
 
         //anyMatch() - if any of the above values matches with given value it returns true else false
-        boolean result = hs.stream().anyMatch(value -> {
-            return value.startsWith("One");
-        });
+        boolean result = hs.stream().anyMatch(value -> value.startsWith("One"));
         System.out.println(result);
 
         //allMatch() - all the values(Partially/Fully) above should get matched with below passed string
-        boolean result2=hs.stream().allMatch(value->{
-            return value.startsWith("One");
-        });
+        boolean result2=hs.stream().allMatch(value-> value.startsWith("One"));
         System.out.println(result2);
 
         //noneMatch - opposite of anymatch
-        boolean result3=hs.stream().noneMatch(value->{
-            return value.startsWith("One");
-        });
+        boolean result3=hs.stream().noneMatch(value-> value.startsWith("One"));
         System.out.println(result3);
     }
 }

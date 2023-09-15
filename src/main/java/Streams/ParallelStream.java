@@ -2,20 +2,25 @@ package Streams;
 
 import java.util.Arrays;
 import java.util.List;
-class Employee{
-    String ename;
+
+class Employee {
+    String eName;
     int id;
-    Employee(String ename,int id){
-        this.ename=ename;
-        this.id=id;
+
+    Employee(String eName, int id) {
+        this.eName = eName;
+        this.id = id;
     }
-    public String getEname(){
-        return this.ename;
+
+    public String getEname() {
+        return this.eName;
     }
-    public int getId(){
+
+    public int getId() {
         return this.id;
     }
 }
+
 //parallel stream we use only for performance
 public class ParallelStream {
     public static void main(String[] args) {
@@ -26,18 +31,18 @@ public class ParallelStream {
                 new Employee("Scott", 4)
         );
         //Stream
-        lst.stream().filter(i->i.id<3).
+        lst.stream().filter(i -> i.id < 3).
                 limit(2).
-                forEach(stu->System.out.println(stu.getEname()+" "+stu.getId()));
+                forEach(stu -> System.out.println(stu.getEname() + " " + stu.getId()));
 
         //Parallel Stream
-        lst.parallelStream().filter(i->i.id<3).
+        lst.parallelStream().filter(i -> i.id < 3).
                 limit(2).
-                forEach(stu->System.out.println(stu.getEname()+" "+stu.getId()));
+                forEach(stu -> System.out.println(stu.getEname() + " " + stu.getId()));
 
         //Convert normal Stream to parallel Stream
-        lst.stream().parallel().filter(i->i.id<3).
+        lst.stream().parallel().filter(i -> i.id < 3).
                 limit(2).
-                forEach(stu->System.out.println(stu.getEname()+" "+stu.getId()));
+                forEach(stu -> System.out.println(stu.getEname() + " " + stu.getId()));
     }
 }
