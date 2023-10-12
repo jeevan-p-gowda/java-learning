@@ -3,10 +3,10 @@ package Programs.Medium.Arrays;
 import java.util.Arrays;
 
 public class TwoPointer {
-    public int[] addTwoValuesInArrayForGivenK(int nums[], int target) {
+    public int[] addTwoValuesInArrayForGivenK(int[] nums, int target) {
         int start = 0;
         int end = nums.length - 1;
-        int result[] = new int[2];
+        int[] result = new int[2];
 
         while (start < end) {
             int sum = nums[start] + nums[end];

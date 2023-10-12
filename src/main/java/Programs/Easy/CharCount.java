@@ -3,9 +3,9 @@ package Programs.Easy;
 import java.util.HashMap;
 import java.util.Map;
 
-public class charcount {
-    public static void count(String name) {
-        char[] str = name.toCharArray();
+public class CharCount {
+    public static void getCharCount(String stringInput) {
+        char[] str = stringInput.toCharArray();
         Map<Character, Integer> hm = new HashMap<Character, Integer>();
         for (char value : str) {
             if (!String.valueOf(value).isBlank()) {
@@ -21,7 +21,6 @@ public class charcount {
     }
 
     public static void main(String[] args) {
-        count("TestVagrant is a good company");
+        getCharCount("TestVagrant is a good company");
     }
 }
-

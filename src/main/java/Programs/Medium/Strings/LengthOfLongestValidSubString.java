@@ -60,4 +60,3 @@ public class LengthOfLongestValidSubString {
         System.out.println(getLengthOfLongestValidSubString(str));
     }
 }
-

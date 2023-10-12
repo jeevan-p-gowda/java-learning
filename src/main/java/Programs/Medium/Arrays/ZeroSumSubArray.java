@@ -4,13 +4,13 @@ import java.util.HashSet;
 import java.util.Set;
 
 public class ZeroSumSubArray {
-    static boolean isZeroSumSubArray(int arr[]) {
+    static boolean isZeroSumSubArray(int[] arr) {
         int sum = 0;
         Set<Integer> hs = new HashSet<>();
-        for (int i = 0; i < arr.length; i++) {
-            sum += arr[i];
+        for (int j : arr) {
+            sum += j;
 
-            if (arr[i] == 0 || sum == 0 || hs.contains(0)) {
+            if (j == 0 || sum == 0 || hs.contains(0)) {
                 return true;
             }
             hs.add(sum);
