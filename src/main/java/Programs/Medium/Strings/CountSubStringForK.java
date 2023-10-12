@@ -4,7 +4,7 @@ import java.util.HashMap;
 
 public class CountSubStringForK {
     static int getCountOfSubStringForK(String input, int distinctCount) {
-        if (input.length() == 0) {
+        if (input.isEmpty()) {
             return 0;
         }
         HashMap<Character, Integer> map = new HashMap<>();

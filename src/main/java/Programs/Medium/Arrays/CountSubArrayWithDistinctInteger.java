@@ -4,7 +4,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class CountSubArrayWithDistinctInteger {
-    public static int getCountOfSubArrayWithDistinctInteger(int arr[], int distinctCount) {
+    public static int getCountOfSubArrayWithDistinctInteger(int[] arr, int distinctCount) {
         int leftPointer = 0;
         int count = 0;
 
