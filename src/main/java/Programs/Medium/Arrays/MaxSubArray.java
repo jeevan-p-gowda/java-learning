@@ -1,7 +1,7 @@
 package Programs.Medium.Arrays;
 
 public class MaxSubArray {
-    public int getMaxSubArrayForSizeKM1(int a[], int k) {
+    public int getMaxSubArrayForSizeKM1(int[] a, int k) {
         int maxSum = 0, windowSum = 0;
         for (int i = 0; i < k; i++) {
             windowSum += a[i];

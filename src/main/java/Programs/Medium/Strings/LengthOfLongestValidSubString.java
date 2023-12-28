@@ -43,6 +43,7 @@ public class LengthOfLongestValidSubString {
                     stk.push(i);
             }
         }
+        System.out.println(stk);
         return result;
     }
 

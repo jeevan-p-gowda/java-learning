@@ -5,7 +5,7 @@ public class LongestSubSeq {
 // longest subsegment of all 1's
 // by changing at most k 0's
 
-static int longestSubSeg(int a[], int n, int k) {
+    static int longestSubSeg(int[] a, int n, int k) {
         int cnt0 = 0;
         int l = 0;
         int max_len = 0;
@@ -31,7 +31,7 @@ static int longestSubSeg(int a[], int n, int k) {
 
     // Driver code
     public static void main(String[] args) {
-        int a[] = {1, 0, 0, 1, 0, 1, 0, 1};
+        int[] a = {1, 0, 0, 1, 0, 1, 0, 1};
         int k = 2;
         int n = a.length;
         System.out.println(longestSubSeg(a, n, k));
