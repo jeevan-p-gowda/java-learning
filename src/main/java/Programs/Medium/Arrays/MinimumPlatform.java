@@ -3,7 +3,7 @@ package Programs.Medium.Arrays;
 import java.util.Arrays;
 
 public class MinimumPlatform {
-    static int getMinimumPlatform(int arrival[], int departure[], int arraySize) {
+    static int getMinimumPlatform(int[] arrival, int[] departure, int arraySize) {
         Arrays.sort(arrival);
         Arrays.sort(departure);
         int platformNeeded = 1, result = 1;
